@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1>student</h1>
+    <h2 id="d1">message</h2>
+    <table border="1">
+        <tbody id="data">
+            <tr>
+                <th>S.no</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+
+
+        </tbody>
+    </table>
+    <button id="d1" onclick="mydata()">hey</button>
+
+    <script>
+
+         let students = [
+            {
+                name: "divyansh",
+                age: 20
+            },
+            {
+                name: "hey",
+                age: 13
+            }
+        ]
+
+        function mydata() {
+            //console.log("hello")
+            let d = document.getElementById("d1")
+            // console.log(d)
+            // d.innerText="hey"
+            // d.innerHTML=`<tr>
+
+            //     <td>1</td>
+            //     <td>gurudatt</td>
+            //     <td>19</td>
+            // </tr>`
+
+            students.map((students) => {
+                d.innerHTML += `<tr>
+                <td>1</td>
+                <td>${students.name}</td>
+                <td>${students.age}</td>
+            </tr>
+            `
+            })
+        }
+
+       
+
+
+
+
+        console.log(d);
+
+
+    </script>
+</body>
+
+</html>
