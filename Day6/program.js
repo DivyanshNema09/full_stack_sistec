@@ -40,3 +40,4 @@ while(left<right){
         left = mid+1;
     }
 }
+console.log(hey)
